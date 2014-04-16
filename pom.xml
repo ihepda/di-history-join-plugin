@@ -4,6 +4,12 @@
 	<groupId>it.ihepda.pentaho.di</groupId>
 	<artifactId>di-history-join-plugin</artifactId>
 	<version>4.3.0</version>
+	<licenses>
+		<license>
+			<name>The MIT License (MIT)</name>
+			<url>http://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
 	<repositories>
 		<repository>
 			<id>pentaho</id>
@@ -55,22 +61,22 @@
 		<dependency>
 			<groupId>pentaho-kettle</groupId>
 			<artifactId>kettle-core</artifactId>
-			<version>4.3.0.8</version>
+			<version>${kettle-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>pentaho-kettle</groupId>
 			<artifactId>kettle-db</artifactId>
-			<version>4.3.0.8</version> 
+			<version>${kettle-version}</version> 
 		</dependency>
 		<dependency>
 			<groupId>pentaho-kettle</groupId>
 			<artifactId>kettle-engine</artifactId>
-			<version>4.3.0.8</version>
+			<version>${kettle-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>pentaho-kettle</groupId>
 			<artifactId>kettle-ui-swt</artifactId>
-			<version>4.3.0.8</version>
+			<version>${kettle-version}</version>
 		</dependency>
 		<dependency>
         	<groupId>org.eclipse.swt</groupId>
@@ -85,4 +91,7 @@
 		</dependency>
             		
 	</dependencies>
+	<properties>
+		<kettle-version>4.3.0.8</kettle-version>
+	</properties>
 </project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="HistoryJoinPlugin"
+   iconfile="HJ.png"
+   description="History Join Plugin"
+   tooltip="History Join Plugin"
+   category="Joins"
+   classname="it.claudio.dangelo.kettle.plugin.history.HistoryJoinMeta">
+   <libraries>
+    <library name="${project.build.finalName}.jar"/>
+    </libraries>
+    
+   <localized_category>
+     <category locale="en_US">Joins</category>
+   </localized_category>
+   <localized_description>
+     <description locale="en_US">History Join</description>
+   </localized_description>
+   <localized_tooltip>
+     <tooltip locale="en_US">History Join Plugin</tooltip>
+   </localized_tooltip>
+   
+</plugin>

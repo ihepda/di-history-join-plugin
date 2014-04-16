@@ -1,0 +1,65 @@
+	---
+	Kettle history join plugin
+	---
+	
+Introduction
+
+	This plugin supply a method to join two tables using the date-from and 
+	date-to history. It use the two dates that indicate the life of the record and
+	join using a query (like the database join plugin) to resolve the record's story
+	of the two entities. 
+	
+* Installation
+
+	To install the plugin download from {{http://sourceforge.net/projects/su4jd/files/}},
+	create a folder (for example HistoryJoin) under [kettle home]/plugins/steps/.
+	Copy the jar in the new folder and extract only the files <plugin.xml>
+	and <HJ.png>.
+	Start kettle and enjoy!
+
+* Usage
+
+	To use the plugin open the <Joins> category and use the <History Join>
+	plugin. Open the plugin, you can see all fields:
+	
+	* Step name
+	
+	* Connection : The database connection to use
+	
+	* History date fields (from / to) : The fields that contains the two date (date from and date to) that
+	drive the story.
+	
+	* History columns (from/to) : The two column that contains the dates used to recreate the story
+	of the principal entity.
+	
+	* SQL : The query to use for the join. Please remember of add the join condition and the order for the date-from.
+	
+	* Replace variables : If flagged the variables will replaced in the SQL.
+	
+	* Parameters to use : Parameters of the query.
+	
+* Note
+	
+	All the dates (from and to) <<must be set>>. If you have null value, you must
+	transform (using a view or the query) in a valid date value (9999-12-31 for example). 	
+	
+	In the SQL you <<must>> insert a where clause that load the entities in the range of
+	the primary entity
+	
+	for example 
+	
++------	
+	date2_to > date1_from and date2_from < date1_to
++------ 
+
+	or
+
++-----
+	? between date2_from and date2_to
++-----
+
+	where ? will be set with the reference date
+		
+* If this plugin is useful
+
+	Please donate a free import to help the development 

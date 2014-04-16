@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SU4JD - Kettle History Join plugin">
+  <publishDate position="navigation-top" format="dd-MM-yyyy"/>
+<skin>
+    <groupId>net.sourceforge.su4jd</groupId>
+    <artifactId>su4jd-skins</artifactId>
+    <version>0.0.1</version>
+  </skin>
+  <body>
+    <links>
+      <item name="SU4JD" href="http://su4jd.sourceforge.net" />
+    </links>
+
+    <menu name="Menu">
+      <item name="Introduction" href="index.html"/>
+      <item name="Download" href="http://sourceforge.net/projects/su4jd/files/"/>
+      <item name="Release Notes" href="release-notes.html" />
+      <item name="Road Map" href="roadmap.html" />
+      <item name="Donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=YFAJYCAUUGZDU&amp;lc=IT&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" />
+    </menu>
+    <menu ref="reports"/>
+  </body>
+</project>

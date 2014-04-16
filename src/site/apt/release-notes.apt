@@ -1,0 +1,9 @@
+kettle-history-join-plugin
+
+* First release
+
+	In this release the system increments the date using the day of the month.
+	In next release this will be choice like input in the dialog.
+	 
+
+	 
